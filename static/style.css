@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #aac3e9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 60%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: 95%;
+    border-radius: 24px;
+}
+
+.form-section {
+    flex: 1.2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1A2B3D;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 20px auto;
+    width: 80%;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+#password-size {
+    width: 71%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.options label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.password-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#password {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #f8f9fa;
+    font-family: 'Courier New', monospace;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+#generate-btn {
+    background: linear-gradient(to right, #1A2B3D, #1A2B3D);
+    color: white;
+}
+
+#generate-btn:hover {
+    background: linear-gradient(to right, #0056b3, #0a58ca);
+}
+
+#copy-btn {
+    background: white;
+    color: #558DCA;
+    border: 2px solid #558dca;
+}
+
+#copy-btn:hover {
+    background: #e9f3ff;
+    color: #558DCA;
+}

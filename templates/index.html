@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="{{ url_for('static', filename='cybersecurity4_0.webp')}}"/>
+        </div>
+        
+        <div class="form-section">
+            
+            <div class="text">
+                <h1>Secure Password Generator</h1>
+                <p>Protect your accounts with secure, personalized passwords</p>
+
+            </div>
+            
+            
+            <form id="password-form">
+                <hr style="border-color:#aaa; box-sizing:border-box; width:100%;"/>
+                <div class="right">
+                    <!-- size -->
+                    <label for="password-size">Password size</label>
+                    <input type="number" id="password-size" value="" min="1">
+                </div>
+                <hr style="border-color:#aaa; box-sizing:border-box; width:100%;"/>
+                
+                <div class="options">
+                    <!-- uppercase -->
+                    <label><input type="checkbox" id="uppercase">Uppercase</label>
+                    <!-- numbers -->
+                    <label><input type="checkbox" id="numbers">Numbers</label>
+                    <!-- special -->
+                    <label><input type="checkbox" id="special">Special characters</label>
+                </div>
+
+                <hr style="border-color:#aaa; box-sizing:border-box; width:100%;"/>
+
+
+                <div class="password-display">
+                    <input type="text" id="password" readonly>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="generate-btn">Generate</button>
+                    <button type="button" id="copy-btn">Copy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+ 
+</body>
+</html>
